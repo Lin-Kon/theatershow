@@ -21,7 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `theatershow`
 --
-
+CREATE DATABASE theatershow;
+USE theatershow;
 -- --------------------------------------------------------
 
 --
@@ -48,6 +49,9 @@ INSERT INTO `admin` (`id`, `username`, `email`, `password`) VALUES
 -- Table structure for table `movielist`
 --
 
+
+--
+-- Dumping data for table `movielist`
 CREATE TABLE `movielist` (
   `id` int(11) NOT NULL,
   `title` varchar(999) NOT NULL,
@@ -61,33 +65,9 @@ CREATE TABLE `movielist` (
 --
 
 INSERT INTO `movielist` (`id`, `title`, `description`, `time`, `imgsrc`) VALUES
-(11, 'khgj', 'kjhgk', '11:11:00', '3idiots.jpg'),
-(12, 'asdflj', 'asdl;fkj', '14:32:00', ''),
-(13, 'asdfl;j', 'asdflj', '11:11:00', 'cars_road_autumn_91074_1280x720.jpg'),
-(16, '', '', '00:00:00', ''),
-(17, 'Dhamaal', '', '23:11:00', 'dhamaal.jpg');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `showtime`
---
-
-CREATE TABLE `showtime` (
-  `code` varchar(20) NOT NULL,
-  `time` time NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `showtime`
---
-
-INSERT INTO `showtime` (`code`, `time`) VALUES
-('MORNNING', '10:00:00'),
-('NOON', '13:00:00'),
-('AFTERNOON', '16:00:00'),
-('EVENING', '19:00:00'),
-('NIGHT', '22:00:00');
+(23, 'Fast & furious presents: hobbs & shaw', 'Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely alliance when a cyber-genetically enhanced villain threatens the future of humanity.', '10:00:00', 'maxresdefault.jpg'),
+(25, 'Good boys', 'Three 6th grade boys ditch school and embark on an epic journey while carrying accidentally stolen drugs, being hunted by teenage girls, and trying to make their way home in time for a long-awaited party.', '13:00:00', '200x200.png'),
+(28, 'The Lion King', 'After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.', '10:00:00', 'MV5BMjIw.jpg');
 
 --
 -- Indexes for dumped tables
@@ -113,9 +93,10 @@ ALTER TABLE `movielist`
 -- AUTO_INCREMENT for table `movielist`
 --
 ALTER TABLE `movielist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
