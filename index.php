@@ -41,10 +41,13 @@ $result = $templink->query($sql);
 			</div>
 		</nav>
 	</div>
-    
-    <br><br><br>
+	<br><br><br>
 
-<div class="wrapper">
+
+
+	<div class="wrapper">
+	
+
     <?php
        if($result) :
          while($row = $result->fetch_assoc()): ?>
@@ -64,6 +67,13 @@ $result = $templink->query($sql);
              endif;
        ?>
        
-    </div>
+	</div>
+
+
+
+	<footer>
+        <center>
+        <h4>&copy;2019 . Movie Show</h4>
+        </center>
 </body>
 </html>

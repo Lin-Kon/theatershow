@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
     $templink = $conn->link;
     $result = $templink->query($sql);
     if ($result) {
-        unlink( "../images/".$tempid.".jpg" );
+        // unlink( "../images/".$tempid.".jpg" );
         echo "<center></br></br></br><h2>Movie id ".$tempdid." Successfully Deleted</h2></center>";
    
     }
