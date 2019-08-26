@@ -1,4 +1,5 @@
 <?php
+// include('session.php');
 include '../functions.php';
 $conn = new theater();
 $sql="SELECT * FROM movielist";

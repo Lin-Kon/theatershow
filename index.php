@@ -59,7 +59,9 @@ $result = $templink->query($sql);
 				   <img src="images/<?php echo $row['imgsrc']; ?>" height="200" width="200" class="img-thumnail" />
 	   			</td>
 				<td>
-				   <h4><b>Description</b></h4><?php echo $row['description']; ?></br>
+				   <h4><b>Description</b></h4><?php echo $row['description']; ?>
+				   <h4>Time</h4><?php echo $row['time'];?>
+				   </br><hr>
 	   			</td>
 			 	
 			   </tr>

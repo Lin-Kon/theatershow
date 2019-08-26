@@ -1,6 +1,7 @@
 <?php
-
+// session_start();
 include '../functions.php' ;
+
 
 if(isset($_POST['submit'])){
    
@@ -10,7 +11,19 @@ if(isset($_POST['submit'])){
      
      $sql="SELECT * FROM admin WHERE username='$username' AND password='$pass'";
      $check = $conn->login($sql);
- }
+    //  $rows = mysql_num_rows($check);
+    //  if ($rows == 1) { 
+    //  $_SESSION["username"]= $username;
+    //  $_SESSION["pass"]= $pass;
+    // $_SESSION['login_user']=$username;
+    // header("location: admin/dashboard.php");
+    //  }
+    //  else{
+    //     $error = "Username or Password is invalid";
+    //  }
+
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

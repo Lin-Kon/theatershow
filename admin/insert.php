@@ -1,5 +1,5 @@
 <?php
-
+// include('session.php');
 include '../functions.php' ;
 
 if(isset($_POST['submit'])){
@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
         echo '</br></br><center><h2 style="color: white;">'.$title.' image uploaded</h2></center>';
     }
     else{
-        echo '</br></br><center><h2 style="color: white;">'.$title.' image not uploaded</h2></center>';
+        echo '</br></br><center><h2 style="color: white;">'.$title.' image already uploaded or unable to upload</h2></center>';
 
     }
     if($result){
