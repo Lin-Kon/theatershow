@@ -23,12 +23,13 @@
 						<span class="icon-bar"></span>
                     	<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Admin Dashboard</a>
+					<a class="navbar-brand" href="dashboard.php"  class="active">Admin Dashboard</a>
 				</div>  
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="nav navbar-nav navbar-left">
-						<li class="active"><a href="insert.php" target="_parent">Add New Movie</a></li>
+						<li><a href="insert.php" target="_parent">Add New Movie</a></li>
 						<li><a href="delete.php" target="_parent">Delete Existing Movie</a></li>	
+						<li><a href="index.php" target="_self">Logout</a></li>
 					</ul>
 				</div>
 			</div>
@@ -36,8 +37,10 @@
 	</div>
     </br></br></br>
     
-       <!-- <a href="insert.php">Add Movie</a>
-       <a href="delete.php">Delete</a>  -->
-    </div>
+    <center>
+	<h2>Welcome to Admin Panel</h2>
+	<p>Use the navigaion buttons to add/ delete movie</p>
+	<p>Click on the logout button to go back to the login window</p>
+	</center>
 </body>
 </html>

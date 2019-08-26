@@ -1,7 +1,6 @@
 body{
 	background-image: url(../images/bg_image_blue.jpg);
 	background-size: cover;
-	
 }
 form.movies-form{
 	width: 650px;
@@ -20,12 +19,20 @@ form.movies-form input{
 	color: #fff;
 	border-radius: 5px;
 }
-form.movies-form label{
+form.movies-form label.must{
 	color: red;
+	font-size: 20px;
+}
+form.movies-form label.opt{
+	color: green;
+	font-size: 20px;
+}
+form.movies-form label {
+	color: white;
 	cursor: pointer;
 	padding: 5px 0;
 	display: block;
-	font-size: 20px;
+	font-size: 15px;
 	font-family: tahoma;
 }
 form.movies-form input[type=submit]{
